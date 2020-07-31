@@ -3,20 +3,13 @@ ul {
     background-color: #f3f3f3;
 }
 
-img {
-    max-width: auto;
-    height: 50px;
+section {
+    width: 94%;
+    margin: 0 auto;
 }
 
 li a:hover {
     background-color: lightgray;
-}
-
-li#logo {
-    float: left;
-    padding: 14px 16px;
-    background-attachment: fixed;
-    background-color: whitesmoke;
 }
 
 nav ul {
@@ -26,12 +19,13 @@ nav ul {
     overflow: hidden;
     background-color: whitesmoke;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
 }
 
 nav li {
-    float: right;
+    float: left;
+    width: 15%;
 }
 nav li a {
     display: block;
@@ -40,4 +34,41 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
     color: black;
+}
+
+footer {
+    background-color: lightslategrey;
+    background-size: cover;
+    padding: 15px 10px;
+}
+
+footer dl {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+footer dl dt, footer dl dd {
+    display: inline;
+}
+
+#button {
+    width: 5%;
+    padding: 14px 16px;
+}
+
+#button :first-child {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#search_box {
+    padding: 14px 16px;
+    width: 40%;
+}
+
+#search_box :first-child {
+    width: 95%;
+    border-radius: 5px;
+    border-width: 1px;
+    text-overflow: ellipsis;
 }
