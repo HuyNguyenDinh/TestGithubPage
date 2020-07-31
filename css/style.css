@@ -3,6 +3,8 @@ ul {
     background-color: #f3f3f3;
 }
 
+
+
 section {
     width: 94%;
     margin: 0 auto;
@@ -21,6 +23,7 @@ nav ul {
     position: fixed;
     width: 100%;
     top: 0;
+    overflow: auto;
 }
 
 nav li {
@@ -43,20 +46,24 @@ footer {
 }
 
 footer dl {
+    width: 100%;
     color: white;
     text-transform: capitalize;
     text-align: center;
 }
-footer dl dt, footer dl dd {
+
+footer dl dd, footer dl dt {
     display: inline;
 }
 
 #button {
     width: 5%;
-    padding: 14px 16px;
+    padding: 14px;
 }
 
 #button :first-child {
+    padding: 1px 1px;
+    background-color: grey;
     width: 100%;
     border-radius: 5px;
 }
@@ -71,4 +78,8 @@ footer dl dt, footer dl dd {
     border-radius: 5px;
     border-width: 1px;
     text-overflow: ellipsis;
+}
+
+#search_box input[placeholder] {
+    text-align: center;
 }
