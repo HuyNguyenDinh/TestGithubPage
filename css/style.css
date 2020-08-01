@@ -69,6 +69,10 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    width: 100%;
+}
+
 header > div{
     background-color: lightblue;
     background-position: top;
@@ -92,6 +96,7 @@ footer {
     background-color: lightslategrey;
     background-size: cover;
     padding: 15px 10px;
+    width: 100%;
 }
 
 footer table {
