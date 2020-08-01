@@ -3,11 +3,21 @@ ul {
     background-color: #f3f3f3;
 }
 
-
-
 section {
-    width: 94%;
+    width: 90%;
     margin: 0 auto;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section > div {
+    float: left;
+    width: 45%;
+    padding: 15px;
 }
 
 li a:hover {
@@ -29,14 +39,53 @@ nav ul {
 nav li {
     float: left;
     width: 15%;
+    font-size: larger;
+    font-weight: bold;
 }
 nav li a {
+    color: midnightblue;
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: black;
+}
+
+nav ul :last-child {
+    width: 50%;
+    height: auto;
+}
+
+nav ul :last-child table {
+    width: 100%;
+}
+
+nav ul :last-child table tr :first-child {
+    width: 75%;
+    padding: 1px;
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header > div{
+    background-color: lightblue;
+    background-position: top;
+    padding: 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: red;
+    text-align: center;
+    text-shadow: rgb(48, 1, 202)6px 6px;
+}
+
+header > div :first-child:hover {
+    color: violet;
+}
+
+nav ul :last-child table tr :last-child {
+    width: 20%;
 }
 
 footer {
@@ -57,23 +106,14 @@ footer dl dd, footer dl dt {
 }
 
 #button {
-    width: 5%;
-    padding: 14px;
-}
-
-#button :first-child {
-    padding: 1px 1px;
     background-color: grey;
-    width: 100%;
-    border-radius: 5px;
+    width: 95%;
+    border-radius: 15px;
+    padding: 10px 1px;
 }
 
 #search_box {
     padding: 14px 16px;
-    width: 40%;
-}
-
-#search_box :first-child {
     width: 95%;
     border-radius: 5px;
     border-width: 1px;
