@@ -27,6 +27,7 @@ li a:hover {
 nav ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,23 +39,22 @@ nav ul {
 }
 
 nav li {
-    width: 15%;
-    font-size: larger;
+    font-size: large;
     font-weight: bold;
+    overflow: clip;
 }
 nav li a {
-    border-radius: 10px;
     color: white;
-    display: block;
+    display: inline-block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 30px;
     text-decoration: none;
     overflow: hidden;
 }
 
-nav ul :last-child {
+nav ul li:last-child {
+    float: left;
     width: 50%;
-    height: auto;
 }
 
 nav ul :last-child table {
@@ -62,8 +62,11 @@ nav ul :last-child table {
 }
 
 nav ul :last-child table tr :first-child {
-    float: right;
     width: 90%;
+}
+
+nav ul :last-child table tr :last-child {
+    width: 15%;
 }
 
 body {
@@ -121,12 +124,14 @@ footer table {
 }
 
 #button {
+    width: 80%;
+    font-weight: bold;
+    text-align: center;
     background-color: black;
     border: 2.5px solid white;
     color: white;
-    width: 70%;
     border-radius: 15px;
-    padding: 10px 1px;
+    padding: 10px 2px;
     overflow: hidden;
 }
 
@@ -139,7 +144,8 @@ footer table {
 }
 
 #search_box {
-    padding: 14px 16px;
+    margin: 2px;
+    padding: 16px 20px;
     width: 95%;
     border-radius: 15px;
     border-width: 1px;
