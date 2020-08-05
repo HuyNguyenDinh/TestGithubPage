@@ -25,6 +25,8 @@ li a:hover {
 }
 
 nav ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -33,11 +35,9 @@ nav ul {
     position: fixed;
     width: 100%;
     top: 0;
-    overflow: auto;
 }
 
 nav li {
-    float: left;
     width: 15%;
     font-size: larger;
     font-weight: bold;
@@ -63,7 +63,7 @@ nav ul :last-child table {
 
 nav ul :last-child table tr :first-child {
     float: right;
-    width: 80%;
+    width: 90%;
 }
 
 body {
@@ -83,14 +83,19 @@ header > div{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: bold;
-    color: red;
     text-align: center;
     text-shadow: rgb(48, 1, 202)6px 6px;
     overflow: auto;
+    animation: changeColor 1.5s infinite;
 }
 
-header > div :first-child:hover {
-    color: violet;
+@keyframes changeColor {
+    from {
+        color: red;
+    }
+    to {
+        color: violet;
+    }
 }
 
 nav ul :last-child table tr :last-child {
@@ -119,7 +124,7 @@ footer table {
     background-color: black;
     border: 2.5px solid white;
     color: white;
-    width: 95%;
+    width: 70%;
     border-radius: 15px;
     padding: 10px 1px;
     overflow: hidden;
@@ -139,4 +144,10 @@ footer table {
     border-radius: 15px;
     border-width: 1px;
     text-overflow: ellipsis;
+}
+
+div.mail {
+    bottom: 5%;
+    right: 2%;
+    position: fixed;
 }
